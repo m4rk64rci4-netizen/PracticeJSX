@@ -1,6 +1,6 @@
 import {React, useState} from 'react';
 import {useNavigate} from 'react-router-dom';
-
+import CIT from '../assets/CIT.png';
 
 function LoginForm() {
     const navigate = useNavigate();
@@ -34,7 +34,8 @@ function LoginForm() {
     return(
         <div className="h-screen bg-blue-950 flex justify-center items-center">
             <div className="w-full max-w-sm bg-white rounded-lg flex flex-col items-center m-3 backdrop-blur-sm shadow-lg">
-                <h2 className="text-2xl font-bold mb-2 mt-3">Login</h2>
+                <img src={CIT} alt="Logo" className="w-32 h-32 mt-6"/>
+                
                 <form className="flex flex-col w-full p-6">
                     <div className="mb-4 flex flex-col gap-2">
                         <label htmlFor="username" className="text-sm font-medium">Username</label>

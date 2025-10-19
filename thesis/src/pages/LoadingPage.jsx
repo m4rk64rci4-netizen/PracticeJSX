@@ -3,6 +3,15 @@ import { Navigate } from 'react-router-dom'
 import Loader from '../components/Loader'; 
 
 const LoadingPage = () => {
+
+    return (
+        <Loader />
+    );
+
+}
+export default LoadingPage
+
+    /*
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
@@ -14,6 +23,5 @@ const LoadingPage = () => {
             <Loader />
     ) : (
         <Navigate to="/thesis/login" replace />
-    );
-}
-export default LoadingPage
+    ); 
+    */
