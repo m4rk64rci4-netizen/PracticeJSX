@@ -12,7 +12,7 @@ function LoginForm() {
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        if (!username || !password){
+    if (!username || !password){
         setError('Please fill all the fields.');
         return;
     };
@@ -22,7 +22,7 @@ function LoginForm() {
         if (username === "admin" && password === "admin"){
             navigate('/thesis/admin', {replace: true});
         } else {
-            setError('Invalid username or password.');
+            setError('Incorrect username or password.');
         }
     } catch (err){
         setError('Login Failed. Please try again.');
@@ -55,6 +55,11 @@ function LoginForm() {
                             className="w-full px-3 py-2 border border-gray-300 rounded" 
                             placeholder="Password" 
                         />
+                        
+                        <div className="flex justify-center">
+                            {error && <p className="text-red-500 text-sm mt-2">{error}</p>}
+                        </div>
+
                         <input 
                             type="submit" 
                             id="submit"

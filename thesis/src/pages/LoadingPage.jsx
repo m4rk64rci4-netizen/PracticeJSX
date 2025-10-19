@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { Navigate } from 'react-router-dom'
+import Loader from '../components/Loader'; 
 
 const LoadingPage = () => {
     const [loading, setLoading] = useState(true);
@@ -10,7 +11,7 @@ const LoadingPage = () => {
     }, []);
 
     return loading ? (
-            <h1>Loading...</h1>
+            <Loader />
     ) : (
         <Navigate to="/thesis/login" replace />
     );
