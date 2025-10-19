@@ -33,7 +33,7 @@ function LoginForm() {
 
     return(
         <div className="h-screen bg-blue-950 flex justify-center items-center">
-            <div className="w-full max-w-sm bg-white rounded-lg shadow-md flex flex-col items-center m-3 drop-shadow-md drop-shadow-white">
+            <div className="w-full max-w-sm bg-white rounded-lg flex flex-col items-center m-3 backdrop-blur-sm shadow-lg">
                 <h2 className="text-2xl font-bold mb-2 mt-3">Login</h2>
                 <form className="flex flex-col w-full p-6">
                     <div className="mb-4 flex flex-col gap-2">
@@ -52,15 +52,13 @@ function LoginForm() {
                             id="password"
                             onChange={(e) => setPassword(e.target.value)}
                             value={password}
-                            className="w-full px-3 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500" 
+                            className="w-full px-3 py-2 border border-gray-300 rounded" 
                             placeholder="Password" 
                         />
                         <input 
                             type="submit" 
                             id="submit"
-                            value="Submit" 
-                            className="font-bold text-white bg-sky-500 hover:bg-blue-600 w-full px-3 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500" 
-                            placeholder="Submit"
+                            className="font-bold text-white bg-slate-700 hover:bg-slate-600 w-full px-3 py-2 rounded cursor-pointer duration-300" 
                             onClick={handleSubmit}
                         />
                     </div>
