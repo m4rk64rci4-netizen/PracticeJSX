@@ -5,7 +5,7 @@ const LoadingPage = () => {
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        const timer = setTimeout(() => setLoading(false), 4000); // Simulate a 4-second loading time
+        const timer = setTimeout(() => setLoading(false), 2000); // Simulate a 4-second loading time
         return () => clearTimeout(timer);
     }, []);
 
