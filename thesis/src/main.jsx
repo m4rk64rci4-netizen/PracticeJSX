@@ -7,7 +7,9 @@ import LoginPage from './pages/LoginPage.jsx'
 import AdminDashboard from './pages/AdminDashboard.jsx'
 
 const router = createBrowserRouter([
-  {path: 'thesis/', element: <App />}
+  {path: 'thesis/', element: <App />},
+  {path: 'thesis/login', element: <LoginPage />},
+  {path: 'thesis/admin', element: <AdminDashboard />}
 ])
 
 createRoot(document.getElementById('root')).render(
@@ -16,5 +18,4 @@ createRoot(document.getElementById('root')).render(
   </StrictMode>,
 )
 
-  /*{path: 'thesis/login', element: <LoginPage />},
-  {path: 'thesis/admin', element: <AdminDashboard />}*/
+  /**/
