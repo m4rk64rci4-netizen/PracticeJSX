@@ -4,14 +4,6 @@ import Loader from '../components/Loader';
 
 const LoadingPage = () => {
 
-    return (
-        <Loader />
-    );
-
-}
-export default LoadingPage
-
-    /*
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
@@ -24,4 +16,10 @@ export default LoadingPage
     ) : (
         <Navigate to="/thesis/login" replace />
     ); 
+
+}
+export default LoadingPage
+
+    /*
+    
     */

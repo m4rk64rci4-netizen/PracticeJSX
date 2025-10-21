@@ -33,12 +33,11 @@ function LoginForm() {
 
 
     return(
-        <div className="h-screen bg-gray-200 flex justify-center items-center">
-            <div className="w-full max-w-sm  rounded-lg flex flex-col items-center -pb-2 shadow-lg bg-white">
+        <div className="animate-loadstart h-screen bg-gray-200 flex justify-center items-center">
+            <div className="min-w-sm max-w-md rounded-lg flex flex-col items-center -pb-2 shadow-lg bg-white">
                 <img src={CIT} alt="Logo" className="w-32 h-32 mt-6"/>
-                
                 <form className="flex flex-col w-full p-4 gap-4">
-                    <div class="relative w-full max-w-sm">
+                    <div className="relative w-full max-w-sm">
                         <input
                             type="text"
                             id="username"
@@ -55,7 +54,7 @@ function LoginForm() {
                         </label>
                     </div>
 
-                    <div class="relative w-full max-w-sm">
+                    <div className="relative w-full max-w-sm">
                         <input
                             type="password"
                             id="password"
